@@ -60,3 +60,6 @@ button{
     background:hsl(69, 83%, 56%);
     border: 1px solid hsl(69, 82%, 63%);
 }
+.container{
+    margin-top:2rem;
+}
