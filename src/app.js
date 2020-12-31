@@ -6,6 +6,9 @@ const hbs = require('hbs');
 const express = require('express');
 const app = express()
 
+const port = process.env.PORT || 3000
+
+
 // console.log(__dirname); //directory
 // console.log(path.join(__dirname,'../public'));  // path manipulation   
 //define paths for Express config
@@ -101,8 +104,8 @@ app.get('*',(req,res)=>{
        errorMessage:'Page not Found'
    })
 })
-app.listen(3000,()=>{
-    console.log('Server is up on port 3000')
+app.listen(port,()=>{
+    console.log(`Server is up on port ${port}`)
 }) //start up the server app.listen(port,callback)
 
 
